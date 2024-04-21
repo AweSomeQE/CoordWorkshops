@@ -3,23 +3,23 @@
 
 
 Practical Task:
-- [x] Generate an array of point pairs in a two-dimensional Cartesian coordinate
+- [ ] Generate an array of point pairs in a two-dimensional Cartesian coordinate
 system.
-- [x] Convert the coordinates of the points from the Cartesian system to the
+- [ ] Convert the coordinates of the points from the Cartesian system to the
 polar system.
-- [x] Convert the coordinates of the points back from the polar system to the
+- [ ] Convert the coordinates of the points back from the polar system to the
 Cartesian system, ensuring the values match the original ones.
-- [x] Generate an array of point pairs in a three-dimensional Cartesian
+- [ ] Generate an array of point pairs in a three-dimensional Cartesian
 coordinate system.
-- [x] Convert the coordinates of the points from the Cartesian system to the
+- [ ] Convert the coordinates of the points from the Cartesian system to the
 spherical system.
-- [x] Convert the coordinates of the points back from the spherical system to
+- [ ] Convert the coordinates of the points back from the spherical system to
 the Cartesian system, ensuring the values match the original ones.
-- [x] Implement functions to calculate the distance between two points in the
+- [ ] Implement functions to calculate the distance between two points in the
 Cartesian, polar, and spherical coordinate systems.
-- [x] Perform distance calculations between all pairs of points in each of the
+- [ ] Perform distance calculations between all pairs of points in each of the
 coordinate systems.
-- [x] Compare the computational complexity of calculations for different
+- [ ] Compare the computational complexity of calculations for different
 coordinate systems.
 
 ## Computation Time Analysis:
