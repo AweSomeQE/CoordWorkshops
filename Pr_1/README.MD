@@ -1,5 +1,5 @@
 #**Workshop № 1**
-##*Comparison of Computational Complexity in Calculating Distances Between Points Across Different Coordinate Systems* 
+## *Comparison of Computational Complexity in Calculating Distances Between Points Across Different Coordinate Systems* 
 
 
 Practical Task:
@@ -22,7 +22,7 @@ coordinate systems.
 - [x] Compare the computational complexity of calculations for different
 coordinate systems.
 
-##Computation Time Analysis:
+## Computation Time Analysis:
 
 Conversions:
 - 2D Cartesian to Polar and vice versa typically took less time compared to 3D conversions.
@@ -38,7 +38,7 @@ Efficiency of Distance Calculations
 - Polar and Spherical Systems incur overhead from angle-based computations, resulting in longer distance calculation times.
 
 
-##Results:
+## Results:
 
 ![](png/Screenshot_1.png)
 ![](png/Screenshot_2.png)
