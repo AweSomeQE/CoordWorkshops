@@ -1,4 +1,4 @@
-#**Workshop № 1**
+# **Workshop № 1**
 ## *Comparison of Computational Complexity in Calculating Distances Between Points Across Different Coordinate Systems* 
 
 
