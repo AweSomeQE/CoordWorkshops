@@ -1,1 +1,2 @@
-# Workshops tasks done by Eduard Gek #
+# Coordinate Systems workshops tasks #
+## done by Eduard Gek ##
