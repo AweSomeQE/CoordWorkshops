@@ -1,5 +1,5 @@
 # **Workshop № 2**
-## * Analysis and Processing of Digital Signals* 
+## *Analysis and Processing of Digital Signals* 
 
 
 Practical Task:
