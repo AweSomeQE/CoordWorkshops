@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# mine
+node_nodules/
+
+
 # Distribution / packaging
 .Python
 build/
