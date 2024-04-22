@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukraine Map with Clickable State Centres</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+
+        .background {
+            background:url("./ua.svg") no-repeat;
+            transform: scale(0.6);
+            transform-origin: top left;
+            width: 100vw;
+            height: 200vh;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -50;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 5px;
+            background: lightgrey;
+            border: 1px solid grey;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+        .state-centre {
+            fill: red;
+            cursor: pointer;
+        }
+        .state-centre:hover {
+            fill: blue;
+        }
+    </style>
+</head>
+<body>
+    <svg id="ukraine-map" width="800" height="600"></svg>
+
+    <div class ='background'> </div>
+
+    <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+
+    <script>
+        const svg = d3.select("#ukraine-map");
+
+        const tooltip = d3.select("#tooltip");
+
+        // Sample data with coordinates of state centres in Ukraine
+        const stateCentres = [
+            { city: "Kyiv", x: 280, y: 100 },
+            { city: "Kharkiv", x: 450, y: 130 },
+            { city: "Lviv", x: 80, y: 130 },
+            { city: "Odesa", x: 280, y: 280 },
+            { city: "Dnipro", x: 400, y: 195 },
+            { city: "Donetsk", x: 495, y: 220 },
+            { city: "Zaporizhzhia", x: 415, y: 225 },
+            { city: "Lutsk", x: 100, y: 70 },
+            { city: "Uzhhorod", x: 50, y: 196 },
+            { city: "Iwano-Frankivsk", x: 95, y: 185 },
+            { city: "Poltava", x: 375, y: 135 },
+            { city: "Khmeknitskyi", x: 165, y: 130 },
+            { city: "Rivne", x: 155, y: 70 },
+            { city: "Zhytomir", x: 205, y: 90 },
+            { city: "Kropivnitsky", x: 330, y: 190 },
+            { city: "Cherkasy", x: 310, y: 150 },
+            { city: "Mykolaiv", x: 315, y: 250 },
+            { city: "Kherson", x: 375, y: 270 },
+            { city: "Sumy", x: 375, y: 75 },
+            { city: "Chernihiv", x: 315, y: 65 },
+            { city: "Vinnica", x: 215, y: 170 },
+            { city: "Chernivtsi", x: 135, y: 210 },
+            { city: "Ternopil", x: 125, y: 150 },
+            { city: "Lugansk", x: 535, y: 180 },
+            { city: "Sevastopol", x: 370, y: 365 },
+            { city: "Simferopol", x: 380, y: 345 },
+
+        ];
+
+        // Plot the state centres
+        svg.selectAll("circle")
+            .data(stateCentres)
+            .enter()
+            .append("circle")
+            .attr("class", "state-centre")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("r", 10)
+            .on("mouseover", (event, d) => {
+                tooltip.transition().duration(200).style("opacity", .9);
+                tooltip.html(d.city)
+                       .style("left", (event.pageX + 5) + "px")
+                       .style("top", (event.pageY - 28) + "px");
+            })
+            .on("mouseout", () => {
+                tooltip.transition().duration(500).style("opacity", 0);
+            })
+            .on("click", (event, d) => {
+                alert(`Clicked on ${d.city}`);
+            });
+    </script>
+</body>
+</html>
