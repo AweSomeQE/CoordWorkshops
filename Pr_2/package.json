@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "fft-js": "^0.0.12",
+    "nodeplotlib": "^1.1.2"
+  },
+  "name": "pr_2",
+  "description": "Practical Task:\r - Signal Generation Based on a Given Description:\r   - Students are provided with a mathematical description of a signal (e.g., a\r sinusoidal signal with a specified frequency and amplitude) which they\r must generate programmatically.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
